@@ -9,6 +9,11 @@ pipeline{
         }
     
         stage("test"){
+            when {
+                expression{
+                    env.BRANCH_NAME == 'main'
+                }
+            }
             steps{
                 echo 'testing the application' 
             }
@@ -19,6 +24,17 @@ pipeline{
             steps{
                 echo 'deploying  the application' 
             }
+        }
+    }
+    post{
+        succuss{
+            echo 'succesfully executed'
+        }
+        faliure{
+            echo 'failed'
+        }
+        alway{
+            echo 'go and check '
         }
     }    
 } 
