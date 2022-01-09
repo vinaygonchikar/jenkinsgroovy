@@ -27,7 +27,7 @@ pipeline{
         }
     }
     post{
-        succuss{
+        success{
             echo 'succesfully executed'
         }
         failure{
