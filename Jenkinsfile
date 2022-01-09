@@ -10,8 +10,8 @@ pipeline{
     
         stage("test"){
             when {
-                expression{
-                    env.BRANCH_NAME == 'main'
+                expression {
+                    BRANCH_NAME == 'main'
                 }
             }
             steps{
