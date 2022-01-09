@@ -30,10 +30,10 @@ pipeline{
         succuss{
             echo 'succesfully executed'
         }
-        faliure{
+        failure{
             echo 'failed'
         }
-        alway{
+        always{
             echo 'go and check '
         }
     }    
