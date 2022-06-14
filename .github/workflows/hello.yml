@@ -16,10 +16,12 @@ jobs:
       - name: Who started this workflow
         run: echo "This workflow is started by ${{ github.actor }}" 
 
-      - name: Set GitHub_Env value
-        run: |
-          cat variable.txt
-    
+
+      - name: Run script file
+        shell: bash
+        run: ./variable.txt
+         
+         
       - name: Display GitHub_Env values
         run: |
           echo "The host  is ${{ env.HOST_URL }}"
