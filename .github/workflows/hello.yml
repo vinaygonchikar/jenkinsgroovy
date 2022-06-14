@@ -19,7 +19,9 @@ jobs:
 
       - name: Run script file
         shell: bash
-        run: ./variable.txt
+        run: |
+          chmod +x ./variable.txt
+          ./variable.txt
          
          
       - name: Display GitHub_Env values
