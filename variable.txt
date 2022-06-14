@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
-echo "HOST_URL=$(vinay)" >> $GITHUB_ENV
-echo "ENVIRONMENT=$(gabber)" >> $GITHUB_ENV
-echo "TEST_TOKEN=$(banaglore)" >> $GITHUB_ENV    
-echo "JAVA_VERSION=$(chitradurga)" >> $GITHUB_ENV   
-echo "SLACK_CHANNEL=$(challakere)" >> $GITHUB_ENV                           
-echo "INTEGRATION_TEST_VAR=$(mane)" >> $GITHUB_ENV  
+echo "HOST_URL=vinay" >> $GITHUB_ENV
+echo "ENVIRONMENT=gabber" >> $GITHUB_ENV
+echo "TEST_TOKEN=banaglore" >> $GITHUB_ENV    
+echo "JAVA_VERSION=chitradurga" >> $GITHUB_ENV   
+echo "SLACK_CHANNEL=challakere" >> $GITHUB_ENV                           
+echo "INTEGRATION_TEST_VAR=mane" >> $GITHUB_ENV  
