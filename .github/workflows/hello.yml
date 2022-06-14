@@ -1,0 +1,29 @@
+name: Test 
+on:
+
+
+  push:
+    branches:    
+      - '**'        # matches every branch
+
+#workflow has below steps        
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Who started this workflow
+        run: echo "This workflow is started by ${{ github.actor }}" 
+
+      - name: Set GitHub_Env value
+        run: |
+          cat variable.txt
+    
+      - name: Display GitHub_Env values
+        run: |
+          echo "The host  is ${{ env.HOST_URL }}"
+          echo "The Project id is ${{ env.ENVIRONMENT }}"  
+          echo "job status will be sent to ${{ env.SLACK_CHANNEL }} slack channel"
+          echo "The java version is  ${{ env.JAVA_VERSION }}"  
+          echo "The java version is  ${{ env.INTEGRATION_TEST_VAR }}"            
