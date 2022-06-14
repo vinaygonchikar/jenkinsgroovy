@@ -1,3 +1,5 @@
+#!/bin/bash
+set -e
 echo "HOST_URL=$(vinay)" >> $GITHUB_ENV
 echo "ENVIRONMENT=$(gabber)" >> $GITHUB_ENV
 echo "TEST_TOKEN=$(banaglore)" >> $GITHUB_ENV    
